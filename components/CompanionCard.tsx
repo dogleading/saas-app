@@ -48,7 +48,7 @@ const CompanionCard = ({
         </div>
       </div>
 
-      <Link href={`/companion/${id}`} className="w-full">
+      <Link href={`/companions/${id}`} className="w-full">
         <button className="btn-primary w-full justify-center hover:opacity-90 hover:text-white">
           Start Conversation
         </button>

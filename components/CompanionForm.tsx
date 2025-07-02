@@ -50,7 +50,7 @@ const CompanionForm = () => {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     const companion = await createCompanion(values);
     if (companion) {
-      router.push(`/companions/${companion.$id}`);
+      router.push(`/companions/${companion.id}`);
     } else {
       console.log("Failed to create companion");
       router.push("/");
